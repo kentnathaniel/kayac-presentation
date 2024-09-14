@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thin */
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayThinItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Mediums */
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayMediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bolds */
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue-Haas-Grotesk";
+  src: url("./assets/fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: "Neue-Haas-Grotesk", Arial, Helvetica, sans-serif;
+}
