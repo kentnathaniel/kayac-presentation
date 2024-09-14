@@ -1,13 +1,6 @@
 import React, { useRef } from "react";
 import SmartCat from "./assets/smart-cat-suits.svg?react";
-import {
-  AnimatePresence,
-  motion,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
-import { cn } from "./lib/utils";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 
 function SectionContainer({ children }: { children: React.ReactNode }) {
   const containerRef = useRef(null);
