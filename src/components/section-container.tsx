@@ -1,8 +1,10 @@
 import React, { HTMLAttributes, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 function SectionContainer({
   children,
+  className,
   ...rest
 }: { children: React.ReactNode } & HTMLAttributes<HTMLDivElement>) {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -10,7 +12,10 @@ function SectionContainer({
 
   return (
     <div
-      className="mb-48 flex h-auto flex-col justify-center bg-black"
+      className={cn(
+        "mb-48 flex h-auto flex-col justify-center bg-black",
+        className
+      )}
       ref={containerRef}
       {...rest}
     >
