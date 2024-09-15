@@ -76,7 +76,7 @@ function ExperienceSection() {
               ))}
             </p>
             <p className="mb-4 text-center">Key Products by me</p>
-            <Carousel>
+            <Carousel className="mx-auto max-w-[420px] md:max-w-screen-sm lg:max-w-screen-md">
               <CarouselContent>
                 {experience.products.map((product, idx) => (
                   <CarouselItem key={idx}>
