@@ -79,9 +79,9 @@ function ExperienceSection() {
             <Carousel>
               <CarouselContent>
                 {experience.products.map((product, idx) => (
-                  <CarouselItem key={idx} className="w-full">
+                  <CarouselItem key={idx}>
                     <div className="grid gap-4">
-                      <ZoomableImage className="w-full" src={product.image} />
+                      <ZoomableImage src={product.image} />
                       <p className="mx-auto">{product.name}</p>
                     </div>
                   </CarouselItem>
@@ -93,13 +93,13 @@ function ExperienceSection() {
             <div className="mt-8 grid grid-cols-2 gap-8">
               {experience.stacks.map((v) => (
                 <div>
-                  <p className="mb-2 text-lg">{v.name}</p>
-                  <div className="flex gap-6">
+                  <p className="mb-2 text-base md:text-lg">{v.name}</p>
+                  <div className="flex flex-wrap gap-2 md:gap-6">
                     {v.items.map((v) => (
                       <div className="flex flex-col items-center">
-                        <img src={v.logo} className="h-12" />
+                        <img src={v.logo} className="h-8 md:h-12" />
                         <Separator className="mb-2 mt-4 bg-neutral-400" />
-                        <p className="text-sm">{v.name}</p>
+                        <p className="text-xs md:text-sm">{v.name}</p>
                       </div>
                     ))}
                   </div>
@@ -117,7 +117,7 @@ const interests = [FramerMotionLogo, GSAPLogo, ThreeJSLogo];
 
 function InterestSection() {
   return (
-    <SectionContainer id="interest-section" className="pt-24">
+    <SectionContainer id="interest-section" className="px-8 pt-24 md:px-0">
       <div className="mx-auto flex flex-col items-center">
         <h1 className="text-3xl">Current Interest</h1>
         <p className="mb-12 text-lg font-thin">現在の関心</p>
@@ -125,7 +125,7 @@ function InterestSection() {
 
       <div className="grid max-w-screen-md gap-8">
         <p className="w-full text-justify font-thin leading-6 tracking-wider">
-          I've always leaned towards the engineering side of Frontend
+          I've always been leaning towards the engineering side of Frontend
           Development. But lately, I've grown interested in the creative
           aspects, particularly web animation and 3D web. I believe the rise of
           AI makes creative coders highly valued.
@@ -154,12 +154,12 @@ function InterestSection() {
 function ClosingSection() {
   return (
     <SectionContainer className="mb-0">
-      <div className="mx-auto my-auto flex h-fit flex-col items-center gap-4">
-        <div className="flex gap-2">
+      <div className="mx-auto my-auto flex h-fit flex-col items-center gap-4 px-8 md:px-0">
+        <div className="flex flex-col gap-2 md:flex-row">
           <p className="text-xl">Thank you so much for your time!</p>
           <p className="text-xl">時間をありがとうございました</p>
         </div>
-        <div className="mt-8 flex flex-col">
+        <div className="mt-8 flex flex-col items-center text-center">
           <p className="max-w-screen-sm font-thin">
             Click here to view the GitHub repository for this presentation.
           </p>

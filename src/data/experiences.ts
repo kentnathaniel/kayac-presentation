@@ -31,7 +31,7 @@ export const experiences = [
     title: "Full Time, Indonesia",
     date: "May 2021 - April 2024",
     description:
-      "Rakamin is a startup engaged in career development field. Rakamin’s products range from B2C (Career Bootcamp, Project Based Internship) to B2B (Talent Scouting, Employee Training & Recruitment, Headhunting). The ecosystem had grown quite significantly during my time in there, when the first time I joined it was only around 20 people. By the time I left, it almost reached 100 people. \n\nDuring my time there, my primary responsibility was ensuring code scalability and promoting best practices among developers, which involved conducting numerous code reviews. For the product development itself, I was mostly assigned to the B2C team.",
+      "Rakamin is a startup engaged in career development field. Rakamin’s products range from B2C (Career Bootcamp, Project Based Internship, Career Counseling) to B2B (Talent Scouting, Employee Training & Recruitment, Headhunting). The ecosystem had grown quite significantly during my time in there, when the first time I joined it was only around 20 people. By the time I left, it almost reached 100 people. \n\nDuring my time there, my primary responsibility was ensuring code scalability and promoting best practices among developers, which involved conducting numerous code reviews. For the product development itself, I was mostly assigned to the B2C team and sometimes help with the B2B side as well but not as often as the B2C.",
     products: [
       {
         name: "Project Based Internship Landing Page",
