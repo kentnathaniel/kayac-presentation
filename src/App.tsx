@@ -35,7 +35,7 @@ function IntroSection() {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-center md:text-left"
         >
-          <h1 className="mb-2 text-3xl">Hi there, KAYAC friends!</h1>
+          <h1 className="mb-2 text-3xl">Hi there, friends from KAYAC!</h1>
           <p className="font-thin">
             I'm <strong>Kent</strong>
           </p>
@@ -62,12 +62,18 @@ function ExperienceSection() {
             <div className="mb-8 flex items-center gap-4">
               <img src={experience.image} className="h-12 w-12" />
               <div>
-                <p className="text-2xl font-bold">{experience.name}</p>
-                <p className="text-lg font-thin">{experience.title}</p>
-                <p className="text-lg font-thin">{experience.date}</p>
+                <p className="text-lg font-bold md:text-2xl">
+                  {experience.name}
+                </p>
+                <p className="text-sm font-thin md:text-lg">
+                  {experience.title}
+                </p>
+                <p className="text-sm font-thin md:text-lg">
+                  {experience.date}
+                </p>
               </div>
             </div>
-            <p className="mb-8 w-full text-justify font-thin leading-6 tracking-wider">
+            <p className="mb-8 w-full text-justify text-sm font-thin leading-6 tracking-wider md:text-base">
               {experience.description.split("\n").map((v, index) => (
                 <React.Fragment key={index}>
                   {v}
@@ -76,10 +82,10 @@ function ExperienceSection() {
               ))}
             </p>
             <p className="mb-4 text-center">Key Products by me</p>
-            <Carousel className="mx-auto max-w-[420px] md:max-w-screen-sm lg:max-w-screen-md">
+            <Carousel className="xs:max-w-[420px] mx-auto max-w-[300px] md:max-w-screen-sm lg:max-w-screen-md">
               <CarouselContent>
                 {experience.products.map((product, idx) => (
-                  <CarouselItem key={idx}>
+                  <CarouselItem key={idx} className="basis-full">
                     <div className="grid gap-4">
                       <ZoomableImage src={product.image} />
                       <p className="mx-auto">{product.name}</p>
@@ -123,20 +129,20 @@ function InterestSection() {
         <p className="mb-12 text-lg font-thin">現在の関心</p>
       </div>
 
-      <div className="grid max-w-screen-md gap-8">
-        <p className="w-full text-justify font-thin leading-6 tracking-wider">
+      <div className="box-border grid max-w-screen-md gap-8">
+        <p className="w-full text-justify text-sm font-thin leading-6 tracking-wider md:text-lg">
           I've always been leaning towards the engineering side of Frontend
-          Development. But lately, I've grown interested in the creative
+          Development. But lately, I've grown some interest in the creative
           aspects, particularly web animation and 3D web. I believe the rise of
           AI makes creative coders highly valued.
         </p>
         <div className="mx-auto flex w-fit flex-col items-center gap-8">
           {interests.map((v, idx) => (
-            <img src={v} key={idx} className="h-32" />
+            <img src={v} key={idx} className="h-24 md:h-32" />
           ))}
         </div>
 
-        <p className="w-full text-justify font-thin leading-6 tracking-wider">
+        <p className="w-full text-justify text-sm font-thin leading-6 tracking-wider md:text-lg">
           In addition to exploring the creative side of Frontend development, I
           still find joy in mastering TypeScript. As a language, TypeScript
           greatly improves the maintainability of a codebase, especially in
@@ -144,7 +150,7 @@ function InterestSection() {
           Matt Pocock on Twitter!
         </p>
         <div className="mx-auto">
-          <img src={MattPocock} className="h-64" />
+          <img src={MattPocock} className="h-32 md:h-48" />
         </div>
       </div>
     </SectionContainer>
@@ -179,7 +185,7 @@ function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className="fixed top-0 z-50 flex w-screen justify-end gap-8 px-12 py-8"
+        className="fixed top-0 z-50 flex w-screen justify-center gap-8 px-12 py-8 md:justify-end"
       >
         <a className="cursor-pointer" href="#intro-section">
           Intro
