@@ -81,7 +81,7 @@ function ExperienceSection() {
                 </React.Fragment>
               ))}
             </p>
-            <p className="mb-4 text-center">Key Products by me</p>
+            <p className="mb-4 text-center">My Key Products</p>
             <Carousel className="xs:max-w-[420px] mx-auto max-w-[300px] md:max-w-screen-sm lg:max-w-screen-md">
               <CarouselContent>
                 {experience.products.map((product, idx) => (
