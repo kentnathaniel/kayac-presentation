@@ -52,7 +52,7 @@ function ExperienceSection() {
   return (
     <SectionContainer id="experience-section" className="pt-24">
       <div className="mx-auto flex flex-col items-center">
-        <h1 className="text-3xl">Experience</h1>
+        <h1 className="text-3xl">Experiences</h1>
         <p className="mb-12 text-lg font-thin">実務経験</p>
       </div>
 
