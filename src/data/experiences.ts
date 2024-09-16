@@ -11,6 +11,7 @@ import RakaminExp1VixDashboard2 from "@/assets/rakamin-exp-vix-builder.png";
 import RakaminExpMyClass from "@/assets/rakamin-exp-my-class-dashboard.png";
 import RakaminExpPaymentPage from "@/assets/rakamin-exp-payment-page.png";
 import RakaminExpHomeworkPage from "@/assets/rakamin-exp-homework-page.png";
+import RakaminCheckoutPage from "@/assets/rakamin-exp-checkout-page.png";
 import ReactViteLogo from "@/assets/react-with-vite-logo.png";
 import StyleComponentsLogo from "@/assets/styled-components-logo.png";
 import ReactQueryLogo from "@/assets/react-query-logo.png";
@@ -60,6 +61,10 @@ export const experiences = [
       {
         name: "Assigment Dashboard",
         image: RakaminExpHomeworkPage,
+      },
+      {
+        name: "Checkout Page",
+        image: RakaminCheckoutPage,
       },
       {
         name: "Payment Dashboard",
