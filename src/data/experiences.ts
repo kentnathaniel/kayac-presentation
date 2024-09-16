@@ -55,7 +55,7 @@ export const experiences = [
         image: RakaminExp1VixDashboard2,
       },
       {
-        name: "My Class Dashboard",
+        name: "Job Guarantee Bootcamp Dashboard",
         image: RakaminExpMyClass,
       },
       {
