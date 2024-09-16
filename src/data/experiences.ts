@@ -28,7 +28,7 @@ export const experiences = [
   {
     image: RakaminLogo,
     name: "Rakamin Academy",
-    title: "Full Time, Indonesia",
+    title: "Full Time (Remote) · Jakarta, Indonesia",
     date: "May 2021 - April 2024",
     description:
       "Rakamin is a startup in the career development field. Its products range from B2C offerings, such as Career Bootcamp, Project-Based Internships, and Career Counseling, to B2B services, including Talent Scouting, Employee Training & Recruitment, and Headhunting. The ecosystem grew significantly during my time there; when I first joined, the development team consisted of only around seven people (2 of them, including me were Frontend). By the time I left, the team had nearly 20 members (4 of them were FE dev). \n\nDuring my 1st and 2nd year, my main responsibility was focused on product development, primarily handling the B2C side. In my 3rd year, my role shifted towards ensuring code scalability and promoting best practices among developers. This included tasks such as migrating JavaScript to TypeScript, integrating an E2E testing framework, migrating from CRA to Vite, and refactoring legacy code to follow a more structured approach. Occasionally, I still contributed to the development process when a feature needs to be released quickly.",
@@ -129,7 +129,7 @@ export const experiences = [
   {
     image: BrandrevLogo,
     name: "Brandrev AI",
-    title: "Freelance (Remote), Singapore",
+    title: "Freelance (Remote) · Singapore",
     date: "Aug 2024 - present",
     description:
       "Brandrev is a startup engaged in tailor-made AI solution for businesses. Currently it is still in development and the dev team consists of 3 members, the frontend part is handle by myself while the backend part is handled by my manager and coworker.",
