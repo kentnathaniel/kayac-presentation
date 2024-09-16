@@ -88,7 +88,7 @@ function ExperienceSection() {
                   <CarouselItem key={idx} className="basis-full">
                     <div className="grid gap-4">
                       <ZoomableImage src={product.image} />
-                      <p className="mx-auto">{product.name}</p>
+                      <p className="mx-auto text-center">{product.name}</p>
                     </div>
                   </CarouselItem>
                 ))}
