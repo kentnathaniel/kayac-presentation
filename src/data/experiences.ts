@@ -137,7 +137,7 @@ export const experiences = [
     title: "Freelance (Remote) · Singapore",
     date: "Aug 2024 - present",
     description:
-      "Brandrev is a startup engaged in tailor-made AI solution for businesses. Currently it is still in development and the dev team consists of 3 members, the frontend part is handle by myself while the backend part is handled by my manager and coworker.",
+      "Brandrev is a startup engaged in tailor-made AI solution for businesses. Currently it is still in development and the dev team consists of 2 members, the frontend part is handled by myself while the backend part is handled by my coworker.",
     products: [
       {
         name: "Dashboard Main Page",
